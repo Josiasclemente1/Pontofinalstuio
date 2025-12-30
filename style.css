@@ -1,0 +1,79 @@
+:root {
+  --neon: #f05a28;
+  --escuro: #050505;
+  --vidro: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  background-color: var(--escuro);
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg-glow {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at 50% 50%, #f05a2815 0%, transparent 60%);
+  z-index: -1;
+  animation: moverBrilho 12s infinite alternate;
+}
+
+@keyframes moverBrilho {
+  0% { transform: translate(-5%, -5%); }
+  100% { transform: translate(5%, 5%); }
+}
+
+.container { text-align: center; padding: 60px 20px; max-width: 450px; margin: auto; }
+
+h1 { font-size: 50px; line-height: 0.8; margin: 0; font-weight: 900; letter-spacing: -2px; }
+.studio-neon { color: var(--neon); letter-spacing: 12px; font-weight: bold; text-shadow: 0 0 15px var(--neon); margin-bottom: 40px; }
+.slogan { color: #888; font-size: 14px; margin-bottom: 40px; }
+
+.linha-scanner {
+  width: 100px; height: 1px; background: var(--neon);
+  margin: -15px auto 40px;
+  box-shadow: 0 0 15px var(--neon);
+  animation: scanear 4s infinite;
+}
+
+@keyframes scanear { 0%, 100% { width: 40px; opacity: 0; } 50% { width: 180px; opacity: 1; } }
+
+.btn-cyber {
+  background: transparent;
+  color: white;
+  border: 1px solid var(--neon);
+  padding: 20px 35px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.btn-secundario {
+  background: transparent;
+  color: var(--neon);
+  text-decoration: none;
+  padding: 12px 20px;
+  font-weight: bold;
+  display: inline-block;
+  border: 1px solid var(--neon);
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.whatsapp-fixo { position: fixed; bottom: 25px; right: 25px; width: 55px; z-index: 100; filter: drop-shadow(0 0 10px var(--neon)); }
+.whatsapp-fixo img { width: 100%; }
+
+.grid-servicos { display: flex; gap: 10px; justify-content: center; margin-top: 50px; }
+.card-vidro { background: var(--vidro); backdrop-filter: blur(8px); padding: 12px; border-radius: 4px; font-size: 9px; border: 1px solid rgba(255,255,255,0.1); }
+
+.linha-tempo { display: flex; justify-content: space-around; margin-top: 20px; }
+.numero-neon { color: var(--neon); font-size: 22px; font-weight: 900; display: block; }
+.ponto-node p { font-size: 9px; color: #777; margin: 0; }
+
+.footer-cyber { margin-top: 70px; border-top: 1px solid #111; padding-top: 30px; }
+.links-cyber a { color: white; text-decoration: none; margin: 0 15px; font-size: 11px; font-weight: bold; border-bottom: 1px solid var(--neon); }
+.copyright { margin-top: 40px; font-size: 9px; opacity: 0.3; }
