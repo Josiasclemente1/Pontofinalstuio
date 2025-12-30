@@ -1,65 +1,59 @@
-:root {
-  --neon: #f05a28;
-  --escuro: #050505;
-}
-
 body {
-  background-color: var(--escuro);
-  color: #fff;
-  font-family: sans-serif;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
+    background-color: #050505;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
 }
 
 .bg-glow {
-  position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: radial-gradient(circle at 50% 50%, #f05a2810 0%, transparent 70%);
-  z-index: -1;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% 50%, #f05a2815 0%, transparent 70%);
+    z-index: -1;
 }
 
-.footer-cyber {
-  border: 1px solid var(--neon);
-  padding: 40px;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.02);
-  box-shadow: 0 0 20px rgba(240, 90, 40, 0.2);
-  text-align: center;
+.cartao-central {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #f05a28;
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(240, 90, 40, 0.2);
+    width: 80%;
+    max-width: 300px;
 }
 
 .links-cyber a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-bottom: 2px solid var(--neon);
-  padding-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid #f05a28;
+    padding-bottom: 5px;
 }
 
 .divisor {
-  width: 80%;
-  height: 1px;
-  background: rgba(255,255,255,0.1);
-  margin: 25px auto;
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 20px auto;
+    width: 50%;
 }
 
 .copyright {
-  font-size: 11px;
-  opacity: 0.5;
-  letter-spacing: 1px;
+    font-size: 10px;
+    opacity: 0.4;
 }
 
-.whatsapp-fixo { 
-  position: fixed; 
-  bottom: 20px; 
-  right: 20px; 
-  width: 50px; 
-  filter: drop-shadow(0 0 8px var(--neon)); 
+.whatsapp-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    filter: drop-shadow(0 0 5px #f05a28);
 }
 .whatsapp-fixo img { width: 100%; }
